@@ -8,7 +8,8 @@ $cdk-z-index-overlay: $zindex-cdk-overlay;
 @include cdk-overlay();
 
 .hc-menu-panel {
-    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    position: relative;
+    font-family: $default-font-family;
     display: flex;
     flex-direction: column;
     padding: 5px 16px;
@@ -29,7 +30,7 @@ $cdk-z-index-overlay: $zindex-cdk-overlay;
 button.hc-menu-item,
 a.hc-menu-item {
     @include fontSize(14px);
-    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: $default-font-family;
     color: $offblack;
     padding: 6px 16px;
     margin: 0 -16px;
